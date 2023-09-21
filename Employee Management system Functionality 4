@@ -1,0 +1,51 @@
+employers = [
+{
+"name": "Mike Smith",
+"SSN": "123123123",
+"phone": "111-222-3333":
+"email": "mike@gmail.com",
+"salary": "\$6000"
+},
+{
+ "name": Sara Smith",
+ "SSN": 123123111",
+ "phone": "111-222-4444".
+ "email": sara@gmail.com",
+ "salary": "\$6500"
+}
+]
+def view_all_employees():
+ for employee in employees:
+print("----------------------")
+print("Name:", employee["name"])
+print("SSN:", employee["SSN"])
+print("phone:", employee["phone"])
+print("Email:", employee["email"])
+print("Salary:",employee["salary"])
+print("--------------------------")
+
+def search_employee_by_SSN(ssn):
+ for employee in employees:
+if employee["SSN"] == ssn:
+print("-------------------")
+print("Name:", employee["name"])
+print("SSN:", employee["SSN"])
+print("phone:", employee["phone"])
+print("Email:", employee["email"])
+print("Salary:", employee["Salary"])
+print("----------------------")
+return
+print("No employee with SSN", ssn. "found.")
+
+def edit_employee_information():
+ssn = input("Enter the SSN of the employee you want to edit: ")
+search_employee_by_ssn(ssn)
+for employee in employees:
+if employee["SSN"] == ssn:
+field = input("select the field you want to edit (name,phone,email,salary): ")
+new_valve = input("Enter the new valve: ")
+employee[field] = new_valve
+print("Employee information updated. ")
+
+
+
